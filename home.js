@@ -1,3 +1,10 @@
+const hamburger = document.getElementById('hamburger');
+const navUl = document.getElementById('nav-ul');
+hamburger.addEventListener('click',()=>{
+    navUl.classList.toggle('show');
+});
+
+
 
 //let price = '45';
 
@@ -121,4 +128,83 @@ myFunction();*/
     let code =value * 42;
     return code;
 }
-showHello6(getSecretCode(2));*/
+showHello6(getSecretCode(2));
+changePercentOff(35);*/
+
+
+/*let mySymbol = Symbol();
+let person = {
+    name: 'solayman',
+    age: 34,
+    partTime: false,
+    [mySymbol]: 'secretInformation'//if want to hide information//
+};
+person.age = 33;//or//
+person['age'] = 45;//or//
+showMessage(person.age);*/
+
+/*let person = {
+    name: 'solayman',
+    age: 34,
+    partTime: false,
+    showInfo: function() {
+        showMessage(this.name + ' is ' + this.age);
+    }
+};
+person.showInfo();*/
+
+/*let person = {
+    name: 'solayman',
+    age: 34,
+    partTime: false
+};
+function incrementAge(person) {
+      person.age++;
+}
+incrementAge(person);
+showMessage(person.age);*/
+
+
+/*let now = new Date()
+showMessage(now.toDateString() );*/
+
+//showMessage( Math.abs(-42) );
+
+//showMessage( Math.random() );
+
+/*let s = 'Hello';
+showMessage( s.charAt(4));*/
+
+/*const header = document.getElementById('percent-off');
+//header.style.color = 'red';
+header.style.fontWeight = '100';*/
+
+/*const button = document.getElementById('see-review');
+button.addEventListener('click', function() {
+
+    const review = document.getElementById('review');
+    review.classList.remove('d-none');
+
+});*/
+
+/*const hello1 = 
+document.getElementsByClassName('hello1');
+
+//hello1[0].h1.add('d-none');
+
+console.log (hello1);*/
+
+/*const containers = 
+    document.getElementsByClassName('container');
+    containers[1].classList.add('d-none');
+    console.log(containers);*/
+
+
+
+
+
+
+
+
+
+

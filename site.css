@@ -8,7 +8,7 @@ body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(48, 45, 83);
+    background-color: #999;
 }
 
 p {
@@ -21,25 +21,28 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(255, 0, 0);
+    background-color: #a493c0;
     padding: 10px;
 }
 
 nav a:visited,
 nav a:link {
-    color: rgb(125, 63, 205);
+    color: #fff;
     text-decoration: none;
 }
 
 nav > ul > {
-display: flex;
+display: inline;
+flex-wrap: wrap;
 padding: 0;
+
 }
 
 nav > ul > li {
     display: inline-block;
     list-style: none;
     margin: 0 5px 0 5px;
+    
 }
 
 main {
@@ -50,16 +53,16 @@ main {
     min-height: 85%;
 }
 h4 {
-    background-color: blue;
+    background-color: blue; 
     display: inline;
     width: 1em;
-}
+    }
 footer {
     padding: 15px;
 }
 
 aside,
-article {
+ article {
     padding: 2em;
 }
 
@@ -74,11 +77,12 @@ article {
 .columns {
     display: flex;
 }
-
-@media only screen and (min-width:710px) {
+ @media only screen and (min-width: 768px) {
     main {
         display: flex;
-    }
+    } 
+
+    
 
     aside {
         margin-left: 2%;
@@ -86,5 +90,37 @@ article {
 
     .columns-desktop {
         display: flex;
-    }
+
+    }}
+
+    
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: aqua;
+    cursor: pointer;
+    font-size: 20px;
 }
+
+.hamburger:focus {
+    outline: none;
+}
+
+ @media screen and (max-width:768px) {
+     .nav-ul {
+         display: none;
+         flex-direction: column;
+         width: 100%;
+         
+     }
+     .nav-ul.show {
+         display: flex;
+     }
+     .hamburger {
+         display: block;
+     }}
+
+     .h9 {
+         background-color: aquamarine;
+     }
