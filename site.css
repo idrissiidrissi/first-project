@@ -47,7 +47,7 @@ nav > ul > li {
 
 main {
     display: block;
-    background-image: url("back.png");
+    background-image: url("");
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
@@ -74,10 +74,11 @@ article {
     width: 75%;
 }
 
+
 .columns {
     display: flex;
 }
- @media only screen and (min-width: 768px) {
+ @media only screen and (min-width: 769px) {
     main {
         display: flex;
     } 
@@ -89,7 +90,12 @@ article {
     }
 
     .columns-desktop {
-        display: flex;
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
 
     }}
 
@@ -124,3 +130,97 @@ article {
      .h9 {
          background-color: aquamarine;
      }
+
+     /* product */
+     .con {
+         background-color: yellow;
+     }
+
+     .pr {
+        background-color: rgb(0, 255, 157);
+    }
+    .we {
+        background-color: yellow;
+    }
+
+.product {
+    width: 185px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product .title {
+    font-weight: bold;
+}
+
+.product .columns {
+    width: 100%;
+    background-color: yellowgreen;
+}
+
+.product .price {
+    text-align: right;
+    background-color: yellow;
+}
+
+.desc {
+    background-color: rgb(211, 212, 224);
+}
+
+
+
+.product .columns div {
+    width: 50%;
+}
+
+.product button {
+    background-color: #f6aeae;
+    padding:  #f6aeae;
+    border-radius: 3px;
+    color: #fff;
+}
+
+/* S*/
+
+.blink {
+    background-color: yellow;
+}
+span {
+    animation:blink 1s linear infinite;
+}
+    @keyframes blink{
+        0%{opacity: 0;}
+        50%{opacity: .5;}
+        100%{opacity: 1;}
+        
+    
+}
+
+/* contact*/
+
+table {
+    background-color: #fff;
+    width: 185px;
+    
+    
+}
+
+.h9 {
+    background-color: #999;
+}
+
+.The {
+    background-color: rgb(231, 166, 166);
+    display: inline;
+    width: 1em;
+
+}
+
+
+
