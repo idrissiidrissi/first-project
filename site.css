@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0px;
 }
 html,
 body {
@@ -27,27 +27,48 @@ header {
 
 nav a:visited,
 nav a:link {
-    color: #fff;
+     color: #fff;
     text-decoration: none;
 }
 
+nav a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+nav a:active{
+    color: red;
+}
+#home li#link1 a {
+     background-color: blue;
+}
+#about li#link2 a {
+    background-color:  blue;
+}
+#contact li#link3 a {
+    background-color:  blue;
+}
+#special li#link4 a {
+    background-color:  blue;
+}
+#product li#link5 a {
+    background-color:  blue;
+}
+
+
+    
 nav > ul > {
 display: inline;
 flex-wrap: wrap;
 padding: 0;
-
 }
-
-nav > ul > li {
+ nav > ul > li {
     display: inline-block;
     list-style: none;
     margin: 0 5px 0 5px;
-    
-}
-
+    }
 main {
-    display: block;
-    background-image: url("");
+    display: grid;
+    background-image: url("ba");
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
@@ -65,6 +86,9 @@ aside,
  article {
     padding: 2em;
 }
+.hello3 {
+    border-radius: 110px;
+}
 
 aside {
     text-align: center;
@@ -76,9 +100,9 @@ article {
 
 
 .columns {
-    display: flex;
+    display: grid;
 }
- @media only screen and (min-width: 769px) {
+ @media only screen and (min-width: 768px) {
     main {
         display: flex;
     } 
@@ -90,7 +114,8 @@ article {
     }
 
     .columns-desktop {
-        display: inline-flex;
+        display: flex;
+        
         margin-left: auto;
         margin-right: auto;
         flex-direction: row;
@@ -107,6 +132,12 @@ article {
     color: aqua;
     cursor: pointer;
     font-size: 20px;
+}
+.hamburger:hover {
+    color: rgb(65, 9, 218);
+}
+.hamburger:active{
+    color: red;
 }
 
 .hamburger:focus {
@@ -127,69 +158,77 @@ article {
          display: block;
      }}
 
-     .h9 {
-         background-color: aquamarine;
-     }
-
      /* product */
      .con {
          background-color: yellow;
      }
 
      .pr {
-        background-color: rgb(0, 255, 157);
+         font-size: x-large;
+         font-weight: bolder;
     }
     .we {
         background-color: yellow;
-    }
+        }
+    .h7 {
+        
+            font-weight: bolder;
+        }
 
 .product {
-    width: 185px;
+    width: 151px;
     padding: 10px;
-    margin: 10px;
-    background-color: #fff;
+    margin: 3px;
+    background-color: rgb(221, 216, 216);
     border: solid 1px #ccc;
 }
 
 .product img {
     width: 100%;
+    
+    
 }
 
 .product .title {
     font-weight: bold;
+    
 }
 
 .product .columns {
     width: 100%;
     background-color: yellowgreen;
+    word-break: break-word;
 }
 
 .product .price {
-    text-align: right;
+    /*text-align: right; */
     background-color: yellow;
 }
 
 .desc {
-    background-color: rgb(211, 212, 224);
+    background-color: rgb(202, 188, 214);
 }
 
 
 
 .product .columns div {
-    width: 50%;
+    /*width: 50%;*/
+    width: 100%;
 }
 
-.product button {
-    background-color: #f6aeae;
-    padding:  #f6aeae;
-    border-radius: 3px;
-    color: #fff;
-}
-
-/* S*/
-
+/*special*/
 .blink {
     background-color: yellow;
+}
+.h9 {
+    background-color: aquamarine;
+}
+.h8 {
+    background-color: yellow;
+    font-weight: bolder;
+}
+ a:hover{
+    color: red;
 }
 span {
     animation:blink 1s linear infinite;
@@ -212,7 +251,7 @@ table {
 }
 
 .h9 {
-    background-color: #999;
+    background-color: rgb(241, 241, 241);
 }
 
 .The {
@@ -222,6 +261,99 @@ table {
 
 }
 
+img {
+    height: 160px;
+    width: 150px;
+    /*border-radius: 110px;*/
+}
 
 
 
+/*order*/
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .order {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    font-weight: bold;
+    
+  }
+  
+  .order.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .order-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .order-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: yellow;
+  }
+  
+  
+  .order-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+  .close-button:hover {
+      color: red;
+
+  }
+  .order-body {
+    padding: 10px 15px;
+  }
+  button {
+      cursor: pointer;
+  }
+  
+  button:hover{
+      color: red;
+  }
+button {
+    background-color: aqua;
+    font-weight: bold;
+}
+  /*
+  
+
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
