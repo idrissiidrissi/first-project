@@ -24,7 +24,7 @@ header {
     width: 100%;
     background-color: #a493c0;
     padding: 10px;
-}
+   }
 
 nav a:visited,
 nav a:link {
@@ -80,6 +80,7 @@ main {
 article {
     margin-right: auto;
     margin-left: auto;
+    width: 95%;
 }
 h4 {
     background-color: blue; 
@@ -102,19 +103,13 @@ aside,
 aside {
     text-align: center;
 }
-
-article {
-    width: 95%;
-}
-
-
 .columns {
     display: grid;
 }
 .columns-desktop {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 1px;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -129,8 +124,8 @@ article {
     
     .columns-desktop {
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 50px;
+        margin-right: 1px;
         flex-direction: row;
         flex-wrap: wrap;
     }}
@@ -186,13 +181,11 @@ article {
         }
 
 .product {
-    width: 151px;
+    width: 200px;
     padding: 10px;
     margin: 3px;
     background-color: rgb(221, 216, 216);
     border: solid 1px #ccc;
-    margin-left: 1px;
-    margin-right: 2px;
 }
 
 .product img {
@@ -219,6 +212,7 @@ article {
 
 .desc {
     background-color: rgb(202, 188, 214);
+    
 }
 
 
@@ -397,16 +391,16 @@ button {
         font-size: 25px;
         color: blue;
     }
-/*
+
     .columns-desktop {
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 50px;
+        margin-right: 1px;
         flex-direction: row;
         flex-wrap: wrap;
     }
-*/
-    @media only screen and (max-width: 768px) {
+
+    @media only screen and (max-width: 968px) {
         main {
             display: grid;
         }}

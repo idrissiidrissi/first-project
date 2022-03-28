@@ -14,30 +14,7 @@
     max-width: 100%;
     background-color: blanchedalmond;
     color: rgb(146, 141, 141);
-    }/*
-    .becom
-    .wrapper {
-        width: 400px;
-        max-width: 20%;
-        margin: 0 auto;
-        margin-left: auto;
-        margin-right: auto;
     }
-    .wrapper label {
-        display: block;
-        margin: 0.5em 0;
-        
-
-    }
-    .wrapper label input {
-        font-size: 18px;
-        padding: 0.5em;
-
-    }
-    .wrapper input[type="submit"]{
-        font-size: 25px;
-        color: blue;
-    }*/
 </style>
 </head>
 <body id="contact">
@@ -119,25 +96,7 @@
 <script src="./home.js"></script>
 
 </body>
-<script>
-    const wrapper = document.querySelector('.wrapper'),
-            form  = wrapper.querySelectorAll('.form'),
-            submitInput = form[0].querySelector('input[type="submit"]');
-    
-            function getDataForm(e){
-                e.preventDefault();
-                var formData = new FormData(form[0]);
-                alert( formData.get('nameField') + ' - '+ 
-                formData.get('emailField') + ' - '+ formData.get('passwordField')
-                + '-'+ formData.get('addressField'));
-            } 
-    
-    
-    document.addEventListener('DOMContentLoaded', function(){
-        submitInput.addEventListener('click', getDataForm, false);
-    }, false);
-    
-    </script>
+
 </html>
 
 
