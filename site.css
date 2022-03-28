@@ -1,6 +1,7 @@
 * {
     margin: 0px;
 }
+
 html,
 body {
     height: 100%;
@@ -53,6 +54,9 @@ nav a:active{
 #product li#link5 a {
     background-color:  blue;
 }
+#link6 a {
+    background-color: blue;
+}
 
 
     
@@ -68,10 +72,14 @@ padding: 0;
     }
 main {
     display: grid;
-    background-image: url("ba");
+    background-image: url("none");
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
+}
+article {
+    margin-right: auto;
+    margin-left: auto;
 }
 h4 {
     background-color: blue; 
@@ -86,6 +94,7 @@ aside,
  article {
     padding: 2em;
 }
+
 .hello3 {
     border-radius: 110px;
 }
@@ -95,36 +104,37 @@ aside {
 }
 
 article {
-    width: 75%;
+    width: 95%;
 }
 
 
 .columns {
     display: grid;
 }
- @media only screen and (min-width: 768px) {
+.columns-desktop {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media only screen and (min-width: 768px) {
     main {
         display: flex;
     } 
 
-    
-
     aside {
         margin-left: 2%;
     }
-
+    
     .columns-desktop {
         display: flex;
-        
         margin-left: auto;
         margin-right: auto;
         flex-direction: row;
         flex-wrap: wrap;
-        
-
     }}
 
-    
 .hamburger {
     background-color: transparent;
     border: 0;
@@ -144,7 +154,7 @@ article {
     outline: none;
 }
 
- @media screen and (max-width:768px) {
+ @media screen and (max-width:568px) {
      .nav-ul {
          display: none;
          flex-direction: column;
@@ -181,6 +191,8 @@ article {
     margin: 3px;
     background-color: rgb(221, 216, 216);
     border: solid 1px #ccc;
+    margin-left: 1px;
+    margin-right: 2px;
 }
 
 .product img {
@@ -248,6 +260,7 @@ table {
     width: 185px;
     
     
+    
 }
 
 .h9 {
@@ -258,6 +271,7 @@ table {
     background-color: rgb(231, 166, 166);
     display: inline;
     width: 1em;
+    
 
 }
 
@@ -336,7 +350,7 @@ button {
     background-color: aqua;
     font-weight: bold;
 }
-  /*
+  
   
 
   
@@ -356,4 +370,43 @@ button {
     opacity: 1;
     pointer-events: all;
   }
+
   
+  /*re g form*/
+
+  .becom
+    .wrapper {
+        width: 400px;
+        max-width: 20%;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapper label {
+        display: block;
+        margin: 0.5em 0;
+        
+
+    }
+    .wrapper label input {
+        font-size: 18px;
+        padding: 0.5em;
+
+    }
+    .wrapper input[type="submit"]{
+        font-size: 25px;
+        color: blue;
+    }
+/*
+    .columns-desktop {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+*/
+    @media only screen and (max-width: 768px) {
+        main {
+            display: grid;
+        }}

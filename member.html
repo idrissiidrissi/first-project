@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact |  ORGANIC Farm shop</title>
+    <link rel="stylesheet" href="site.css" type="text/css"/>
+    <link rel="icon" href="fruits. images\favicon.ico">
+<style>
+    .hello1 {
+    width: 50em;
+    height: em;
+    max-width: 100%;
+    background-color: blanchedalmond;
+    color: rgb(146, 141, 141);
+    }/*
+    .becom
+    .wrapper {
+        width: 400px;
+        max-width: 20%;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapper label {
+        display: block;
+        margin: 0.5em 0;
+        
+
+    }
+    .wrapper label input {
+        font-size: 18px;
+        padding: 0.5em;
+
+    }
+    .wrapper input[type="submit"]{
+        font-size: 25px;
+        color: blue;
+    }*/
+</style>
+</head>
+<body id="contact">
+    <header>
+        <nav>
+            <button class="hamburger" id="hamburger">
+                <h1 class="hamburger">&#9776;</h1>
+   </button>
+            <ul class="nav-ul" id="nav-ul">
+                <li class="H"><a href="/">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact use</a></li>
+                <li><a href="special.html">special</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li id="link6"><a href="member.html">Become a member!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside> <img src="fruits. images\logo.png" class="hello3" alt=></aside>
+        <article>
+            
+            <h1 class="become">Become a member And save!</h1>
+            
+            <div class="wrapper">
+                <h1>Registration Form:</h1>
+<form class="form">
+<label id="nameField">
+<input type="text" name="nameField" placeholder="name" required/>
+</label>
+
+<label id="emailField">
+<input type="email" name="emailField" placeholder="email" required/>
+</label>
+
+<label id="addressField">
+<input type="address" name="addressField" placeholder="address" required />
+</label>
+
+<label id="passwordField">
+<input type="password" id="psw" name="passwordField" placeholder="password" required/>
+
+    </label>
+
+    <label id="passwordVerifyField">
+<input type="password" name="passwordVerifyField" placeholder="verify password" required/>
+    </label>
+
+    <input type="submit" value="submit" name="submit"/>
+    <input type="reset" value="Reset" />
+
+    </form>
+
+</div>
+
+
+</article>
+
+
+    
+</main>
+<footer>
+    <nav>
+        <ul>
+            <li class="H"><a href="/">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact use</a></li>
+        <li><a href="special.html">special</a></li>
+        <li><a href="Product.html">Product</a></li>
+        <li><a href="member.html">Become a member!</a></li>
+
+        </ul>
+    </nav>
+    <p>our address</p>
+<address>neighborhood shop - neighbor street 101 Ky USA</address>
+&COPY;2022 ORGANIC Farm shop   -mohamad idrissi
+</footer>
+<script src="./utils.js"></script>
+<script src="./home.js"></script>
+
+</body>
+<script>
+    const wrapper = document.querySelector('.wrapper'),
+            form  = wrapper.querySelectorAll('.form'),
+            submitInput = form[0].querySelector('input[type="submit"]');
+    
+            function getDataForm(e){
+                e.preventDefault();
+                var formData = new FormData(form[0]);
+                alert( formData.get('nameField') + ' - '+ 
+                formData.get('emailField') + ' - '+ formData.get('passwordField')
+                + '-'+ formData.get('addressField'));
+            } 
+    
+    
+    document.addEventListener('DOMContentLoaded', function(){
+        submitInput.addEventListener('click', getDataForm, false);
+    }, false);
+    
+    </script>
+</html>
+
+
+    
