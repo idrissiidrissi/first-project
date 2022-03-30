@@ -15,6 +15,11 @@
     background-color: blanchedalmond;
     color: rgb(146, 141, 141);
     }
+    section {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
 </style>
 </head>
 <body id="contact">
@@ -34,16 +39,20 @@
         </nav>
     </header>
     <main>
-        <aside> <img src="fruits. images\logo.png" class="hello3" alt=></aside>
-        <article>
-            
+        <aside> <img src="fruits. images\logo.png" class="logo" alt=></aside>
+        <section>
+        
+           
             <h1 class="become">Become a member And save!</h1>
+
             
+            <article>
+                <h1 class="registration"> Registration Form:</h1>
             <div class="wrapper">
-                <h1>Registration Form:</h1>
+                
 <form class="form">
 <label id="nameField">
-<input type="text" name="nameField" placeholder="name" required/>
+<input type="name" name="nameField" placeholder="Fullname" required/>
 </label>
 
 <label id="emailField">
@@ -55,7 +64,7 @@
 </label>
 
 <label id="passwordField">
-<input type="password" id="psw" name="passwordField" placeholder="password" required/>
+<input type="password" name="passwordField" placeholder="password" required/>
 
     </label>
 
@@ -73,7 +82,7 @@
 
 </article>
 
-
+</section>
     
 </main>
 <footer>
@@ -89,13 +98,34 @@
         </ul>
     </nav>
     <p>our address</p>
-<address>neighborhood shop - neighbor street 101 Ky USA</address>
+<address>ORGANIC Farm shop - neighbor street 101 Ky USA</address>
 &COPY;2022 ORGANIC Farm shop   -mohamad idrissi
 </footer>
 <script src="./utils.js"></script>
 <script src="./home.js"></script>
 
 </body>
+
+<script>
+
+const wrapper = document.querySelector('.wrapper'),
+            form  = wrapper.querySelectorAll('.form'),
+            submitInput = form[0].querySelector('input[type="submit"]');
+    
+            function getDataForm(e){
+                e.preventDefault();
+                var formData = new FormData(form[0]);
+                alert( formData.get('nameField') + ' - '+ 
+                formData.get('emailField') + ' - '+ formData.get('passwordField')
+                + '-'+ formData.get('addressField'));
+            } 
+    
+    
+    document.addEventListener('DOMContentLoaded', function(){
+        submitInput.addEventListener('click', getDataForm, false);
+    }, false);
+   
+</script>
 
 </html>
 

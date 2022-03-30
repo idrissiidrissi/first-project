@@ -70,12 +70,28 @@ padding: 0;
     list-style: none;
     margin: 0 5px 0 5px;
     }
+
+    .farmimg {
+        width: 50em;
+        height: 20em;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .paragraph {
+        background-color: #fff;
+        font-size: 1.5em;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
 main {
     display: grid;
-    background-image: url("none");
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
+    background-color: rgb(9, 131, 5);
 }
 article {
     margin-right: auto;
@@ -96,7 +112,7 @@ aside,
     padding: 2em;
 }
 
-.hello3 {
+.logo {
     border-radius: 110px;
 }
 
@@ -113,7 +129,7 @@ aside {
     flex-direction: row;
     flex-wrap: wrap;
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     main {
         display: flex;
     } 
@@ -149,7 +165,7 @@ aside {
     outline: none;
 }
 
- @media screen and (max-width:568px) {
+ @media (max-width:568px) {
      .nav-ul {
          display: none;
          flex-direction: column;
@@ -181,8 +197,8 @@ aside {
         }
 
 .product {
-    width: 200px;
-    padding: 10px;
+    width: 151px;
+    padding: 20px;
     margin: 3px;
     background-color: rgb(221, 216, 216);
     border: solid 1px #ccc;
@@ -218,7 +234,7 @@ aside {
 
 
 .product .columns div {
-    /*width: 50%;*/
+    
     width: 100%;
 }
 
@@ -235,7 +251,7 @@ aside {
 }
  a:hover{
     color: red;
-}
+}/*
 span {
     animation:blink 1s linear infinite;
 }
@@ -245,7 +261,7 @@ span {
         100%{opacity: 1;}
         
     
-}
+}*/
 
 /* contact*/
 
@@ -366,20 +382,31 @@ button {
   }
 
   
-  /*re g form*/
-
-  .becom
+  /*Registration Form:*/
+.become {
+    background-color: #fff;
+    text-align: center;
+}
+ 
+.registration {
+    background-color: #fff;
+    
+}
+  .become
     .wrapper {
-        width: 400px;
+        width: 800px;
         max-width: 20%;
         margin: 0 auto;
         margin-left: auto;
         margin-right: auto;
+       
+    
     }
     .wrapper label {
         display: block;
         margin: 0.5em 0;
-        
+        margin-left: auto;
+        margin-right: auto;
 
     }
     .wrapper label input {
@@ -400,7 +427,7 @@ button {
         flex-wrap: wrap;
     }
 
-    @media only screen and (max-width: 968px) {
+    @media (max-width: 968px) {
         main {
             display: grid;
         }}

@@ -5,7 +5,7 @@ hamburger.addEventListener('click',()=>{
 });
 
 
-/*order*/
+/*order add to cart buttons*/
 
 const openOrderButtons = document.querySelectorAll('[data-order-target]')
 const closeOrderButtons = document.querySelectorAll('[data-close-button]')
@@ -44,24 +44,10 @@ function closeOrder(order) {
   overlay.classList.remove('active')
 }
 
-//add to cart
 
 
-//registration form
-const wrapper = document.querySelector('.wrapper'),
-            form  = wrapper.querySelectorAll('.form'),
-            submitInput = form[0].querySelector('input[type="submit"]');
-    
-            function getDataForm(e){
-                e.preventDefault();
-                var formData = new FormData(form[0]);
-                alert( formData.get('nameField') + ' - '+ 
-                formData.get('emailField') + ' - '+ formData.get('passwordField')
-                + '-'+ formData.get('addressField'));
-            } 
-    
-    
-    document.addEventListener('DOMContentLoaded', function(){
-        submitInput.addEventListener('invalid', getDataForm, false);
-    }, false);
+
+
+
+
    
