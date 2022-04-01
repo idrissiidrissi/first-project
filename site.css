@@ -179,6 +179,27 @@ aside {
          display: block;
      }}
 
+     /*cart icon*/
+
+     .cart ion-icon {
+        vertical-align: bottom;
+        font-size: 20px;
+        padding-right: 5px;
+        
+    }
+    .cart {
+        margin-left: 70%;
+        position: absolute;
+        display: block;
+        position: fixed;
+    }
+    .cart a {
+        background-color: royalblue;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
      /* product */
      .con {
          background-color: yellow;
@@ -272,6 +293,11 @@ table {
     
     
 }
+h2 {
+    font-style: italic;
+    color: #fff;
+
+}
 
 .h9 {
     background-color: rgb(241, 241, 241);
@@ -280,7 +306,9 @@ table {
 .The {
     background-color: rgb(231, 166, 166);
     display: inline;
-    width: 1em;
+    width: 2em;
+    
+    
     
 
 }
